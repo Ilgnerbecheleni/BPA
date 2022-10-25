@@ -6,21 +6,45 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css" rel="stylesheet" />
 <style>
   @page {
-    size: A4
+    size: A4;
+
   }
+.image{
+background:url("./BPA.png");
+background-size:contain;
+}
+
 img{
  width: 21cm;
   height: 29.7cm;
+}
+.ent{
+position:absolute;
+top:8.45cm;
+left:1.82cm;
+ width: 0.22cm;
+  height: 0.22cm;
+background:black;
+
+}
+
+#estabelecimento{
+position:absolute;
+top:3.22cm;
+left:1.3cm;
+border:none;
+
 }
 </style>
 
   </head>
 
-<body class="A4">
+<body class="A4 ">
 
-  <section class="sheet">
+  <section class="sheet image">
+<input type="text" id="estabelecimento" name="lname">
 
-   <img src="./BPA.png" alt="Minha Figura">
+<input type="text" class="ent">
   </section>
 
 </body>
